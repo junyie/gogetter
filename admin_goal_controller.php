@@ -138,7 +138,6 @@ if (isset($_POST['deleteid'])){
             $conn->rollBack();     
         }else{
             $conn->commit();
-            header("location:admin_goal_list.php");
         }
     }
     catch(PDOException $e){
