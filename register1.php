@@ -26,7 +26,7 @@ function sendActiveMail($email,$usrn,$hash){
 
         Please click this link to activate your account:<br>
 
-        http://localhost:8081/gogetter/verify.php?email='.$email.'&hash='.$hash; 
+        http://localhost:80/gogetter/verify.php?email='.$email.'&hash='.$hash; 
         //http://student.kdupg.edu.my/xxx/xx/verify.php?email='.$email.'&hash='.$hash.'&type='.$str;
         $mail->Body = $Msg;
         if(!$mail->send()) {

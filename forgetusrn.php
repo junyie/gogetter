@@ -57,7 +57,7 @@ function sendForgetusrnMail($email,$usrn){
 
   Your Username is :'.$usrn.'
 
-  http://localhost:8081/gogetter/loging.php';  
+  http://localhost:80/gogetter/loging.php';  
   //http://student.kdupg.edu.my/xxx/xx/loging.php'; 
 
   $mail->Body = $Msg;
