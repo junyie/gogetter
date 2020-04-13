@@ -98,7 +98,7 @@ if ($results1 >0 ||  $results3 >0){
         // insert a row
         $stmt->execute();
         sendActiveMail($email,$usrn,$hash);
-        //header('location: registering.php?success=1');
+        header('location: registering.php?success=1');
         }
     catch(PDOException $e)
         {

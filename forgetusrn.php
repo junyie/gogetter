@@ -50,7 +50,7 @@ function sendForgetusrnMail($email,$usrn){
   $mail->addAddress($email);
   $mail->Subject = 'Requesting Forgot Username ( GoGetter.com )';
   $Msg = "<html><head> </head><body>";
-  $Msg .= '<img src="https://i.imgur.com/S5QwiAE.pngg" style="width:180px; height:40px" title="24hrs Tutor" alt="24hrs Tutor"> </body></html>
+  $Msg .= '<img src="https://ci5.googleusercontent.com/proxy/q1c7-9sC5IJC5VEmr2znCyQ5XDrfRVP63npODHE-j9fiCMOHMjRIIeYvUe-rYyUZw1I=s0-d-e1-ft#https://i.imgur.com/aHNsYHX.png" style="width:180px; height:40px" title="24hrs Tutor" alt="24hrs Tutor"> </body></html>
   Hello '.$email.',
 
   You have requested to check your username!<br>
