@@ -109,7 +109,28 @@ body{font-family: Poppins;}blockquote{border-color: #cf4a46;}div[submit-success]
   
 </div> 
 </body>
-
+<?php
+if(isset($_GET['csuccess'])) {
+	$bool = $_GET['csuccess'];
+	if ($bool=1) {
+		echo '	<script>
+				alert("Goal Created!");
+				window.history.replaceState({}, document.title, "/" + "admin_goal_list.php");
+				</script>';
+	}
+}
+if(isset($_GET['usuccess'])) {
+	$bool = $_GET['usuccess'];
+	if ($bool=1) {
+		echo '	<script>
+				alert("Goal Updated!");
+				window.history.replaceState({}, document.title, "/" + "admin_goal_list.php");
+				</script>';
+	}
+}
+?>
+<!-- Jquery JS-->
+<script src="vendor/jquery-3.2.1.min.js"></script>
 <script>
     var createBtn = document.getElementById('createGoal');
     createBtn.addEventListener('click', function() {
@@ -128,7 +149,7 @@ $(".delete").click(function(){
 		data: { deleteid: id},
 		success: function (result) {
 				alert('Record Deleted!');
-				location.reload(true);
+				window.location.href = 'admin_goal_list.php';
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
 			alert("Delete fail");

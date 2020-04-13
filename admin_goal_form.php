@@ -218,33 +218,6 @@ if(isset($_GET['uid'])){
 		$('#previewing').attr('width', '250px');
 		$('#previewing').attr('height', '230px');
 		};
-		/*
-        $(".update").click(function(){
-            var id = $(this).attr("id");
-            var goalName = $("#goals_name").val();
-            var goalDescription = $("#goal_description").val();
-            var goalCategory = $("#category").val();
-            console.log(id);
-            console.log(goalName);
-            console.log(goalDescription);
-            console.log(goalCategory);
-
-            $.ajax(
-                {
-                url: "admin_goal_controller.php",
-                type: "POST",
-
-                data: { updateid: id, updategoalName: goalName, updateGoalDescription: goalDescription, updateGoalCategory: goalCategory},
-                success: function (result) {
-                        alert('Record Updated!');
-                        window.location.href = 'admin_goal_list.php';
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert("Update fail");
-                }
-            });     
-        });
-		*/
     });	
 
     </script>
