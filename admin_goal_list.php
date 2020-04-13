@@ -115,7 +115,7 @@ if(isset($_GET['csuccess'])) {
 	if ($bool=1) {
 		echo '	<script>
 				alert("Goal Created!");
-				window.history.replaceState({}, document.title, "/" + "admin_goal_list.php");
+				window.history.replaceState({}, document.title, "/" + "gogetter/admin_goal_list.php");
 				</script>';
 	}
 }
@@ -124,7 +124,7 @@ if(isset($_GET['usuccess'])) {
 	if ($bool=1) {
 		echo '	<script>
 				alert("Goal Updated!");
-				window.history.replaceState({}, document.title, "/" + "admin_goal_list.php");
+				window.history.replaceState({}, document.title, "/" + "gogetter/admin_goal_list.php");
 				</script>';
 	}
 }
