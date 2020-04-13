@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div class="content">
+ <div id="piechart"></div>
+ <div class="content">
+ 	<canvas id="bar-chart" width="800" height="450"></canvas>
+ </div>
+</div>
+
+
+<script type="text/javascript">
+
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['John', 8],
+  ['Jennifer', 2],
+  ['Jaden', 4],
+  ['Jason', 2],
+  ['Jilaga', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Challenge Name Score in date 2020 FEB 21', 'width':500, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
+// Bar chart
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["John", "Jennifer", "Jaden", "Jason", "Jilaga"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [8,5,4,4,8]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Challenge Name Score in date 2020 FEB 21'
+      }
+    }
+});
+</script>
+
+</body>
+</html>

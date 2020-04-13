@@ -1,0 +1,12 @@
+INSERT INTO `user`(`user_id`, `username`, `uemail`, `upassword`, `upoints`, `uprof_pic`, `u_background`, `bio_data`, `goals_number`, `challage__number`, `verified_status`, `verifying_hash`, `legal_coach_approve`) VALUES 
+		    ("","gyy","yikyek@hotmail.com","123123",0,"","","",0,0,0,"hash",0)
+
+SELECT DISTINCT a.inviter_fk, a.addperson_fk, b.username , b.uprof_pic FROM
+ relationship a, user b WHERE a.inviter_fk =b.user_id AND 
+ a.addperson_fk = b.user_id AND a.inviter_status = 'A' AND a.acceptbyperson = 'A' 
+ OR a.friend_id ="20"  GROUP BY a.inviter_fk,a.addperson_fk
+
+"SELECT DISTINCT a.inviter_fk, a.addperson_fk, b.username , b.uprof_pic FROM
+ relationship a, user b WHERE a.inviter_fk =b.user_id AND 
+ a.addperson_fk = b.user_id AND a.inviter_status = 'A' AND a.acceptbyperson = 'A' 
+ OR a.friend_id =".$_SESSION["identity"]." OR a.inviter_fk =".$_SESSION["identity"]." GROUP BY a.inviter_fk,a.addperson_fk";

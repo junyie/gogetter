@@ -1,0 +1,56 @@
+<div class="mbr-row custom-row">
+                <div class="mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                    <amp-img src="https://negativespace.co/wp-content/uploads/2020/01/negative-space-coffee-late-coffee-shop-870x708.jpg" layout="responsive" width="253.5" height="169" alt="Basic HTML Simple Template" class="placeholder-loader mobirise-loader i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" i-amphtml-layout="responsive" style="--loader-delay-offset:143ms !important;"><i-amphtml-sizer style="padding-top: 66.6667%;"></i-amphtml-sizer>
+                        <div placeholder="" class="placeholder amp-hidden">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                        
+                    <img decoding="async" alt="Basic HTML Simple Template" src="https://negativespace.co/wp-content/uploads/2020/01/negative-space-coffee-late-coffee-shop-870x708.jpg" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+                </div>
+                <div class="mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-6">
+                    <h4 class="custom-card-title mbr-fonts-style mbr-text-cap display-5">Spirit And Truth</h4>
+                    <div class="iconfont-wrapper">
+                        <span class="amp-iconfont animation-normal fa fa-calendar"><svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"></svg></span>
+                    </div>
+                    <p class="custom-card-text2 mbr-fonts-style mbr-card-subtitle mbr-text-i display-4">Monday, 10:00 Am - Friday, 10:00 Am</p>
+                    <br>
+                    <p class="mbr-pt-3 mbr-text mbr-pb-4 tablet-pb-0 mbr-fonts-style display-7">Spirit &amp; Fact Fellowship International encourages the advancement of Church Associations in every country throughout the world. All organizations attach to STF on the basis of sharing the very same vision, Building An Enduring Work of Fact, along with having the very same function, worths, beliefs and methods.</p>
+                </div>
+                <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-3 mbr-flex mbr-jc-s custom-flex">
+                    <div>
+                        <a class="btn btn-primary display-7" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-row custom-row">
+                <div class="mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                    <amp-img src="https://negativespace.co/wp-content/uploads/2020/01/negative-space-coffee-late-coffee-shop-870x708.jpg" layout="responsive" width="253.5" height="169" alt="Simple Template Basic HTML" class="placeholder-loader mobirise-loader i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 66.6667%;"></i-amphtml-sizer>
+                        <div placeholder="" class="placeholder amp-hidden">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                        
+                    <img decoding="async" alt="Simple Template Basic HTML" src="https://negativespace.co/wp-content/uploads/2020/01/negative-space-coffee-late-coffee-shop-870x708.jpg" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+                </div>
+                <div class="mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-6">
+                    <h4 class="custom-card-title mbr-fonts-style mbr-text-cap display-5">Sunday School</h4>
+                    <div class="iconfont-wrapper">
+                        <span class="amp-iconfont animation-normal fa fa-calendar"><svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"></svg></span>
+                    </div>
+                    <p class="custom-card-text2 mbr-fonts-style mbr-card-subtitle mbr-text-i display-4">Monday, 10:00 Am - Friday, 10:00 Am</p>
+                    <br>
+                    <p class="mbr-pt-3 mbr-text mbr-pb-4 tablet-pb-0 mbr-fonts-style display-7">A 'Sunday college is a school, usually (but not always) Christian, which caters to youngsters and also various other youngsters that would be dealing with weekdays. Sunday schools were very first established in the 1780s in England to provide education and learning to working kids. William King initially began a Sunday college in Dursley and Gloucestershire. What do you think of Example HTML Template?</p>
+                </div>
+                <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-3 mbr-flex mbr-jc-s custom-flex">
+                    <div>
+                        <a class="btn btn-primary display-7" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

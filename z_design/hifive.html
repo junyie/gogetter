@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" ng-click="close($event)" modal-window="modal-window" size="md" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">
+    <div class="modal-dialog modal-md" ng-class="size ? 'modal-' + size : ''"><div class="modal-content" modal-transclude="" style="background-image: -webkit-linear-gradient(top, rgb(65, 191, 251) 0%, rgb(255, 150, 0) 100%);"><div class="milestone-modal" set-modal-properties="" background-image="linear-gradient(#41BFFB 0%, #FF9600 100%)" backdrop-color="#FFF">
+  <button type="button" class="close" ng-click="dismiss()" aria-hidden="true">×</button>
+  <div class="text-center">
+    <div class="greeting">Nice work!</div>
+    <div class="high-five-wrapper">
+  <svg class="high-five-hand" version="1.1" xmlns="http://www.w3.org/2000/svg" width="120" height="150" viewBox="0 0 18 24" y="80">
+    <path d="M2.345 18.063c1.343 3.686 3.089 5.936 7.012 5.937 3.923-0.001 6.856-3.179 6.857-6.367v-2.939l2.128-6.475c0.357-0.981 0.029-1.684-0.606-1.915-0.636-0.231-1.338 0.096-1.569 0.732l-2.157 5.821h-0.49l1.804-9.798c0.117-0.666-0.327-1.301-0.993-1.419s-1.301 0.327-1.418 0.993l-1.841 9.489h-0.49v-10.898c0-0.676-0.548-1.224-1.224-1.224-0.676 0-1.224 0.549-1.224 1.224v10.898h-0.49l-1.839-9.468c-0.118-0.666-0.753-1.111-1.419-0.993-0.666 0.117-1.11 0.752-0.993 1.418l1.801 12.838h-0.49l-2.277-4.791c-0.231-0.636-0.934-0.963-1.569-0.732s-1.089 0.589-0.732 1.569l2.219 6.098z" fill="#ffffff"></path>
+  </svg>
+</div>
+    <div class="h5-label">HIGH FIVE!</div>
+    <div class="heading">Unlocked Milestones</div>
+  </div>
+  <!----><div ng-repeat="milestone in milestones" class="milestone-cell">
+    <div class="milestone-badge" ng-style="{'background-image': 'url(' + milestone.badge_url + ')'}" style="background-image: url(&quot;https://s3.amazonaws.com/milestone-images/goal_streak_3/badge/100.png&quot;);"></div>
+    <div class="title">3 day streak!</div>
+    <div class="detail">in Drink more water</div>
+  </div><!---->
+</div>
+</div></div>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+<style>
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+</style>
+<script>
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+</script>
+</body>
+</html>

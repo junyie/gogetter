@@ -1,0 +1,499 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/****Table****/
+
+
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:100,200,300,400,500,600,700,800,900|Yellowtail");
+.col-md-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.row.m0 {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  line-height: 24px;
+  font-size: 13px;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+
+body.light_bg {
+  background: url(../img/Pattern_Light.png) repeat scroll center center;
+  background-size: contain;
+}
+
+body.dark_bg {
+  background: url(../img/Pattern_Drak.png) repeat scroll center center;
+  background-size: contain;
+}
+
+body .content_inner_bg {
+  background: #efefef;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.pad {
+  padding: 0px 68px;
+}
+
+#success {
+  display: none;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+#error {
+  display: none;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+
+
+/* End Header Menu Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* About Person area css
+============================================================================================ */
+.about_person_area {
+  background: #fff;
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about_person_area .person_img {
+  max-width: 322px;
+}
+
+.about_person_area .person_img img {
+  max-width: 100%;
+}
+
+.about_person_area .person_img .download_btn {
+  margin-top: 40px;
+}
+
+.about_person_area .person_details {
+  margin-left: -30px;
+}
+
+.about_person_area .person_details h3 {
+  font-size: 36px;
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.about_person_area .person_details h3 span {
+  color: #fec608;
+}
+
+.about_person_area .person_details h4 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #666666;
+  padding-bottom: 15px;
+}
+
+.about_person_area .person_details p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.about_person_area .person_details .person_information {
+  padding: 15px 0px 25px 0px;
+}
+
+.about_person_area .person_details .person_information ul {
+  display: inline-block;
+}
+
+.about_person_area .person_details .person_information ul li a {
+  font-size: 13px;
+  line-height: 26px;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+
+.about_person_area .person_details .person_information ul + ul {
+  padding-left: 55px;
+}
+
+.about_person_area .person_details .person_information ul + ul li a {
+  font-size: 13px;
+  line-height: 26px;
+  color: #666666;
+  font-family: "Raleway", sans-serif;
+}
+
+.social_icon li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social_icon li a {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: 1px solid #677fb5;
+  display: block;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: all 400ms linear 0s;
+  color: #677fb5;
+}
+
+.social_icon li:nth-child(2) a {
+  color: #70c2e9;
+  border-color: #70c2e9;
+}
+
+.social_icon li:nth-child(2):hover a {
+  background: #70c2e9;
+}
+
+.social_icon li:nth-child(3) a {
+  color: #895a4d;
+  border-color: #895a4d;
+}
+
+.social_icon li:nth-child(3):hover a {
+  background: #895a4d;
+}
+
+.social_icon li:nth-child(4) a {
+  color: #d34836;
+  border-color: #d34836;
+}
+
+.social_icon li:nth-child(4):hover a {
+  background: #d34836;
+}
+
+.social_icon li:nth-child(5) a {
+  color: #007ab9;
+  border-color: #007ab9;
+}
+
+.social_icon li:nth-child(5):hover a {
+  background: #007ab9;
+}
+
+.social_icon li:nth-child(6) a {
+  color: #d8545d;
+  border-color: #d8545d;
+}
+
+.social_icon li:nth-child(6):hover a {
+  background: #d8545d;
+}
+
+.social_icon li:nth-child(7) a {
+  color: #5ecbf3;
+  border-color: #5ecbf3;
+}
+
+.social_icon li:nth-child(7):hover a {
+  background: #5ecbf3;
+}
+
+.social_icon li:nth-child(8) a {
+  color: #ff3ba4;
+  border-color: #ff3ba4;
+}
+
+.social_icon li:nth-child(8):hover a {
+  background: #ff3ba4;
+}
+
+.social_icon li:last-child {
+  margin-right: 0px;
+}
+
+.social_icon li:last-child a {
+  color: #faaa5e;
+  border-color: #faaa5e;
+}
+
+.social_icon li:last-child:hover a {
+  background: #faaa5e;
+}
+
+.social_icon li:hover a {
+  background: #677fb5;
+  color: #fff;
+}
+
+/* End About Person area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Download BTN area css
+============================================================================================ */
+.download_btn {
+  display: block;
+  background: #fec608;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  color: #222222;
+  font-size: 18px;
+  font-family: "Yellowtail", cursive;
+  position: relative;
+  overflow: hidden;
+}
+
+.download_btn span {
+  display: inline-block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  transition: all 400ms linear 0s;
+}
+
+.download_btn:before {
+  content: "\f004";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #222222;
+  top: -100%;
+  left: 0px;
+  font-family: FontAwesome;
+  transition: all 200ms ease-in;
+}
+
+.download_btn:hover span {
+  -webkit-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+.download_btn:hover:before {
+  top: 0px;
+}
+/*contact*/
+.contact_btn {
+  display: block;
+  background: #fec608;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  color: #222222;
+  font-size: 18px;
+  font-family: "Yellowtail", cursive;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact_btn span {
+  display: inline-block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  transition: all 400ms linear 0s;
+}
+
+.contact_btn:before {
+  content: "\f127";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #222222;
+  top: -100%;
+  left: 0px;
+  font-family: FontAwesome;
+  transition: all 200ms ease-in;
+}
+
+.contact_btn:hover span {
+  -webkit-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+.contact_btn:hover:before {
+  top: 0px;
+}
+/*End contact*/
+.topnav .login-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width:120px;
+}
+
+.topnav .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .login-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  p {
+    font-size: 16px; 
+    font-size: 4vw;
+}
+
+@media (max-width:991px){
+    .footer::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 250px 50px 250px;
+        border-color: transparent transparent #f4f4f4;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width:767px){
+    .us-themes .single-section .hvr-float-shadow{
+        margin-bottom: 35px;
+    }
+    .us-themes{
+        padding: 100px 70px;
+    }
+    .header .title h1{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .footer h3.text-40{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .computer_pic img {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+    }
+    .responsive_details {
+        margin-bottom: 150px;
+        height: auto;
+    }
+    .responsive_content h3 {
+        padding-top: 50px;
+    }
+}
+@media (max-width:580px){
+    .header{
+        padding: 150px 15px 200px;
+    }
+    .us-themes{
+        padding: 100px 0px;
+    }
+}
+@media (max-width:460px){
+    .footer h3.text-40 {
+        font-size: 15px;
+    }
+    .header .btn-demo{
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+    .header .btn-demo + .btn-demo{
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    .feature_item_area .col-xs-6{
+        width: 100%;
+    }
+    .feature_item_area .tittle_area h3{
+        font-size: 20px;
+    }
+    .footer h3.text-40 {
+        font-size: 13px;
+        line-height: 26px;
+    }
+}
+}

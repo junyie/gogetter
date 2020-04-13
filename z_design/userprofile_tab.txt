@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+                          <!--<h2 class="page-header">User Profile</h2>-->
+                    <section class="comment-list">
+                      <!-- First Comment -->
+                      <article class="row">
+                        <div class="col-md-2 col-sm-2 hidden-xs">
+                          
+                            <img class="w3-hover-opacity" src="uploads/<?php echo $res3?>" width="128" height="128"/>
+                            <figcaption class="text-center"><?php
+                                   echo '<i class="fa fa-user"></i>'.$_SESSION["actype"].'';
+                                ?></figcaption>
+                          
+                        </div>
+                        <div class="col-md-10 col-sm-10">
+                          <div class="panel panel-default arrow left">
+                            <div class="panel-body">
+                              <header class="text-left">
+                              </div>
+                                <div class="comment-user">
+                                <?php 
+                                if ($_SESSION['actype']=="tutor" && $approval =="0"){
+                                    echo "<center><label >Your account still need approval <br>Email us your resume and we will schedule time <br>for your interview on our <a href='servicecentre.php'>service centre.</a> </label></center><br>";
+                                }
+                                ?>
+                                <label class='col-sm-4 control-label'>Create date </label><br>
+                                <time  class="comment-date" datetime=""><i class="fa fa-clock-o"></i> <?php echo $resgisterD;?></time>
+                              </header>
+                              <br><br>
+                              <div class="comment-post">
+                              <?php 
+                                    if ($resP !="0"){$a = "0";}else{$a = "";$resP = "";} 
+                                    if ($res =="0"){$res = "";}
+                                    echo"<form action ='login_success.php' id='userForm' method='POST'>";
+                                    echo " <div class='form-group'><label class='col-sm-4 control-label'>Zip Code</label><br>
+                                    <input type='text' id='zip' pattern='\d*' placeholder='Zip Number' class='form-control' name='zip' value='$res' maxlength='5'>
+                                    <span class='errorFeedback errorSpan' id='zipError'>Format: �٢ڢۢܢ�</span></div>";
+                                        echo " <label class='col-sm-4 control-label'>Occupation</label><br>
+                                        <input type='text' name='job' value='$resJob' maxlength='70' class='form-control'>
+                                        <br>";
+                                        echo "<label class='col-sm-4 control-label'>Education & Experience</label><br>
+                                            <textarea name='qualify'  rows='3' cols='50' class='form-control'>$res4</textarea><br>";
+                                    
+                                    echo "<input type='hidden' name='csrf' value='$csrf'>" ;
+                                    echo  "<hr>";
+                                    if ( isset($_GET['fail']) && $_GET['fail'] == 1 ){
+                                        echo '<script language="javascript">';
+                                        echo 'alert("Only Accept PNG or JPG format with 2,000,000KB")';
+                                        echo '</script>';
+                                    }
+                              ?>
+                              </div>
+                              <p class="text-right"><button type="submit" id="submit" name="submit" class="btn btn-default" aria-label="Left Align" title="Save Changes">
+                                <span class="far fa-save fa-lg fa-3x" aria-hidden="true"></span>
+                                    </button> </p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>      
+                    </section>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

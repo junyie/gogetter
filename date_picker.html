@@ -1,0 +1,110 @@
+
+<!--script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+Date_Range:
+<input class="form-control" id="usr2" type="text" name="datefilter" value="" autocomplete="off" onkeyup="success()" />
+<input type="hidden" name="durationdays" id="durationdays" value="" />
+<input type="hidden" name="date1" id="date1" value="" />
+<input type="hidden" name="date2" id="date2" value="" />
+
+<script type="text/javascript">
+var date1;
+var date2;
+var days;
+
+$("#myModal2").on("data-dismiss", function () {
+    clearfield();
+});//bug here
+
+function clearfield() {
+    $("#usr1").val("");
+    $("#usr2").val("");
+}
+
+function success() {
+	 if(document.getElementById("usr2").value==="" || document.getElementById("usr1").value==="" || 
+     isNaN(document.getElementById("usr1").value)) { 
+            document.getElementById('button').disabled = true;
+            if(document.getElementById("usr2").value==="" || document.getElementById("usr1").value===""){
+            }else{document.getElementById("alart").style.display = "block";}            
+        } else { 
+            document.getElementById('button').disabled = false;
+            document.getElementById("alart").style.display = "none";
+        }
+    }
+
+function parseDate(str) {
+    var mdy = str.split('-');
+    return new Date(mdy[2], mdy[1]-1, mdy[0]);
+}
+
+function datediff(first, second) {
+    // Take the difference between the dates and divide by milliseconds per day.
+    // Round to nearest whole number to deal with DST.
+    return Math.round((second-first)/(1000*60*60*24));
+}
+function checkIfValuenotSmallerthanDateRange(){
+    value1 = document.getElementById("usr1").value;
+    value2 = document.getElementById("durationdays").value;
+    if (!isNaN(document.getElementById("usr1").value)){
+        if (value1 > value2){ $("#usr1").val(value2);  }
+    }
+}
+
+$( "#usr1" ).change(function() {     //focus(function() {  .focusout(function() { .mouseleave(function() {
+    checkIfValuenotSmallerthanDateRange()  
+    success();
+});
+$( "#usr1" ).mouseleave(function() {  
+    checkIfValuenotSmallerthanDateRange()  
+    success();
+});
+$( "#usr2" ).change(function() {
+    success();
+});
+$( "#usr1" ).focus(function() {
+    checkIfValuenotSmallerthanDateRange()
+    success();
+});
+$( "#usr2" ).focus(function() {
+    success();
+});
+
+var is_date = function(input) {
+  if ( Object.prototype.toString.call(input) === "[object Date]" ) 
+    return true;
+  return false;   
+};
+
+$(function() {
+
+  $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+          cancelLabel: 'Clear'
+      }
+  });
+
+  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('DD-MM-YYYY') + ' to ' + picker.endDate.format('DD-MM-YYYY'));
+      date1 = picker.startDate.format('DD-MM-YYYY');
+      date2 = picker.endDate.format('DD-MM-YYYY');
+      days = datediff(parseDate(date1), parseDate(date2))
+      $("#usr1").val(days);
+      $("#durationdays").val(days);
+      $("#date1").val(date1);
+      $("#date2").val(date2);
+      console.log("days =" + days);
+      console.log("date1 =" + parseDate(date1));
+      console.log("date2 =" + parseDate(date2));
+  });
+
+  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+
+});
+</script>

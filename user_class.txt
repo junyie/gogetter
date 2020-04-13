@@ -1,0 +1,21 @@
+
+______________User CLASS_________________
+register
+login
+logout
+reset password
+
+create challenge
+accept challenge
+decline challenge
+
+view challenge progress
+accept reward
+challenge rating
+
+add goal
+remove goal
+setting goal
+
+_________________________________________
+

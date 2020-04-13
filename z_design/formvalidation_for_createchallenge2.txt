@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+
+  var x = document.forms["myForm"]["amount"].value;	
+  
+  if (x = 2){
+    var a = document.forms["myForm"]["fname1"].value;
+    if (a == "") {
+      alert("Field Cannot be empty");
+      return false;
+  }
+  }
+  if (x = 3){
+    var a = document.forms["myForm"]["fname1"].value;
+    var b = document.forms["myForm"]["fname2"].value;
+
+    if (a == b || b ==  a) {
+      alert("Cannot be the same");
+      return false;  
+  }
+  if (x = 4){
+    var a = document.forms["myForm"]["fname1"].value;
+    var b = document.forms["myForm"]["fname2"].value;
+    var c = document.forms["myForm"]["fname3"].value;
+
+    if (a == b || b == c || c == a) {
+      alert("Cannot be the same");
+      return false;  
+  }
+  if (x = 5){
+    var a = document.forms["myForm"]["fname1"].value;
+    var b = document.forms["myForm"]["fname2"].value;
+    var c = document.forms["myForm"]["fname3"].value;
+    var d = document.forms["myForm"]["fname4"].value;
+    if (a == b || b == c || c ==d || d == a) {
+      alert("Cannot be the same");
+      return false;  
+  }
+
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+<select id="amount" name="amount">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5" selected>5</option>
+</select>
+  
+<select id="cars" name="fname1">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="vw">VW</option>
+  <option value="audi" selected>Audi</option>
+</select>
+
+<select id="cars1" name="fname2">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="vw">VW</option>
+  <option value="audi" selected>Audi</option>
+</select>
+
+<select id="cars2" name="fname3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="vw">VW</option>
+  <option value="audi" selected>Audi</option>
+</select>
+
+<select id="cars3" name="fname4">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="vw">VW</option>
+  <option value="audi" selected>Audi</option>
+</select>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
